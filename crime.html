@@ -1,0 +1,68 @@
+<html>
+<body>
+	
+<h1>List Crimes by Type</h1>
+<form action="listbycrime.php" method="post">
+Crime Type: <input type="text" name="type"><br>
+<input type="submit">
+</form>
+
+<h1>List Victims by Gender</h1>
+<form action="listvictim_gender.php" method="post">
+Crime Type: <input type="text" name="sex"><br>
+<input type="submit">
+</form>
+
+<h1>List Victims by Age (in order)</h1>
+<form action="listvictim_age.php" method="post">
+<input type="submit">
+</form>
+
+<h1>List Crimes before or after Date</h1>
+<form action="crimebydate.php" method="post">
+Date: <input type="text" name="date"><br>
+<input type="submit">
+<input type="radio" name="time" value="before">Before
+<input type="radio" name="time" value="after">After
+</form>
+
+<h1>Find Punishment of a Crime</h1>
+<form action="punishmentofcrime.php" method="post">
+Crime ID: <input type="text" name="crimeID"><br>
+<input type="submit">
+</form>
+	
+<h1>Find Officer associated with a Crime</h1>
+<form action="officercrime.php" method="post">
+Crime ID: <input type="text" name="crimeID"><br>
+<input type="submit">
+</form>
+
+<h1>Find Address of Victim</h1>
+<form action="victimaddress.php" method="post">
+SSN: <input type="text" name="ssn"><br>
+<input type="submit">
+</form>
+	
+<h1>Find Person by SSN</h1>
+<form action="personbyssn.php" method="post">
+SSN: <input type="text" name="ssn"><br>
+<input type="submit">
+</form>
+	
+<h1>List Crimes within a time period</h1>
+<form action="crimetimeperiod.php" method="post">
+Start Date: <input type="text" name="start_date"><br>
+End Date: <input type="text" name="end_date"><br>
+<input type="submit">
+</form>
+	
+	
+<h1>Number arrests by an Officer</h1>
+<form action="numberarrests.php" method="post">
+Officer ID: <input type="text" name="officerID"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
